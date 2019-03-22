@@ -25,5 +25,5 @@ public interface ProductCategoryService extends IService<ProductCategory> {
     Map<String,Object> pageProductCategory(Integer pageSize, Integer pageNum);
 
     //查询所有一级分类及子分类
-    List<PmsProductCategoryWithChildrenItem> listWithChildren();
+    Map<String,Object> listWithChildren();
 }

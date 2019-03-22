@@ -66,4 +66,12 @@ public class ProductCategoryServiceImpl extends ServiceImpl<ProductCategoryMappe
         return map;
 
     }
+
+    @Override
+    public Map<String, Object> listWithChildren() {
+        ProductCategoryMapper baseMapper = getBaseMapper();
+
+
+        return baseMapper.listWithChildren();
+    }
 }
